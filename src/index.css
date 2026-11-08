@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #00070b;
+  --color-foreground: #eef7f8;
+  --color-card: #001015;
+  --color-card-foreground: #eef7f8;
+  --color-popover: #001015;
+  --color-popover-foreground: #eef7f8;
+  --color-primary: #1ad1d1;
+  --color-primary-foreground: #00070b;
+  --color-secondary: #001a1f;
+  --color-secondary-foreground: #eef7f8;
+  --color-muted: #01151a;
+  --color-muted-foreground: #90aaaf;
+  --color-accent: #b0de49;
+  --color-accent-foreground: #00070b;
+  --color-destructive: #fb2c36;
+  --color-destructive-foreground: #eef7f8;
+  --color-border: rgba(255, 255, 255, 0.07);
+  --color-input: rgba(255, 255, 255, 0.1);
+  --color-ring: #1ad1d1;
+}
+
+:root {
+  --background: #00070b;
+  --foreground: #eef7f8;
+  --card: #001015;
+  --card-foreground: #eef7f8;
+  --popover: #001015;
+  --popover-foreground: #eef7f8;
+  --primary: #1ad1d1;
+  --primary-foreground: #00070b;
+  --secondary: #001a1f;
+  --secondary-foreground: #eef7f8;
+  --muted: #01151a;
+  --muted-foreground: #90aaaf;
+  --accent: #b0de49;
+  --accent-foreground: #00070b;
+  --destructive: #fb2c36;
+  --destructive-foreground: #eef7f8;
+  --border: rgba(255, 255, 255, 0.07);
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: #1ad1d1;
+  --radius: 0.75rem;
+
+  /* App Phone Palette matching uploaded screenshots */
+  --app-bg: #f5f7f9;
+  --app-surface: #ffffff;
+  --app-ink: #111827;
+  --app-muted: #64748b;
+  --app-teal: #12b5a6;
+  --app-green: #0b6b5e;
+  --app-mint: #e3f3ef;
+  --app-lavender: #dde4fa;
+  --app-lavender-ink: #46507a;
+  --app-rose: #fde3e3;
+  --app-red: #b42318;
+  --app-line: #e2e8f0;
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  [dir="rtl"] {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.text-gradient-brand {
+  background-image: linear-gradient(135deg, #1ad1d1 0%, #b0de49 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-brand {
+  background-image: linear-gradient(135deg, #1ad1d1 0%, #b0de49 100%);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 7, 11, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(144, 170, 175, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(144, 170, 175, 0.5);
+}
+
+/* Hide scrollbar for clean device preview */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

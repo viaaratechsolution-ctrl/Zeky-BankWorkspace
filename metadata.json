@@ -1,0 +1,6 @@
+{
+  "name": "FNT Bank Workspace",
+  "description": "High-performance banking operations management platform and interactive live mobile workspace demo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
